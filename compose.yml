@@ -1,0 +1,30 @@
+version: '3'
+services:
+  flight:
+    image: prakashbabu28/flight:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  hotel:
+    image: prakashbabu28/hotel:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
+
+  train:
+    image: prakashbabu28/train:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 3
+
+  bus:
+    image: prakashbabu28/bus:latest
+    ports:
+      - "94:80"
+    deploy:
+      replicas: 3
+
